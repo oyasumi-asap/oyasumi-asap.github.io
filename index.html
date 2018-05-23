@@ -14,7 +14,6 @@ function Decode(){
     var Keyword = document.answer_form.answer.value;
     
     var str = CybozuLabs.MD5.calc(Keyword);
-    alert(str);
     if(str == cURL[0]){
     	alert("正解です");
     }
