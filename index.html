@@ -1,32 +1,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="./md5.js"></script>
-<script type="text/javascript">
-    
-function Decode(){
-
-    var cURL = new Array();
-    cURL[0] = "d376527e1cb79cf22abe72211495b751";
-    
-    var Keyword = document.answer_form.answer.value;
-    
-    var str = CybozuLabs.MD5.calc(Keyword);
-    if(str == cURL[0]){
-    	alert("正解です");
-    }
-}
-
-</script>
 </head>
-<body>
-ある場所から南へ1km、東へ1km行ったところでクマに出会いました。
-さらに北へ1km行くと元の場所に戻りました。さて、クマの色は何色だったでしょうか？
-
-<form name="answer_form">
-<input name="answer" type="text" size="30" id="inp_val" placeholder="カタカナで入力"/>
-<input name="btnMD5" onclick="Decode();" type="button" readonly="readonly" value="解答" />
-</form>
-
 </body>
 </html>
